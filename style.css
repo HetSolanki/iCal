@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+
+.display {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+    height: 14vh;
+    width: 380px;
+    font-family: monospace;
+    font-size: 50px;    
+
+}
+
+.main {
+  box-sizing: border-box;
+}
+
+.mini {
+  opacity: .5;
+  font-size: 30px;
+}
+.keypad {
+    width: 380px;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+            'clear clear arrow divide'
+            'seven eight nine multiply'
+            'four five six minus'
+            'one two three plus'
+            'zero zero zero equal';
+}
+
+
+.divide, .multiply, .plus, .minus, .equal {
+    background-color: orange;
+}
+
+.keypad button {
+  border: 2px solid black;
+  font-size: 30px;
+}
+
+.btn-1 {
+  grid-area: clear;
+}
+
+.arrow {
+  grid-area: arrow;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.btn-4 {
+  grid-area: seven;
+}
+
+.btn-5 {
+  grid-area: eight;
+}
+
+.btn-6 {
+  grid-area: nine;
+}
+
+.btn-8 {
+  grid-area: four;
+}
+
+.btn-9 {
+  grid-area: five;
+}
+
+.btn-10 {
+  grid-area: six;
+}
+
+.btn-12 {
+  grid-area: one;
+}
+
+.btn-13 {
+  grid-area: two;
+}
+
+.btn-14 {
+  grid-area: three;
+}
+
+.btn-16 {
+  grid-area: zero;
+}
